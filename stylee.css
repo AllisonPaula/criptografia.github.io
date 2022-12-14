@@ -4,6 +4,7 @@
   padding: 2px;
   font-family: "Roboto" sans-serif;
   line-height: 200%;
+  color: #ffffff;
   }
   
   main{
@@ -72,7 +73,7 @@
   flex:none;
   flex-grow: 0;
   margin: 15px;
-  cursor: poRoboto;
+  cursor: pointer;
   }
   
   .encriptarboton:hover{

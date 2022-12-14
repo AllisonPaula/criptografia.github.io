@@ -6,13 +6,13 @@ function validarMensaje() {
   }
 
   var mensaje = inputMensaje.value;
-  let letrasValidas ="abcdefghijklmnñopqrstuvwxyz ";
+  let letrasValidas ="abcdefghijklmnñopqrstuvwxyz- ";
   let mensajeErroneo = document.createDocumentFragment();
   for (let letra of mensaje){
     if(!letrasValidas.includes(letra)) {
       let p = document.createElement("p");
       p.setAttribute("class","error");
-     /* p.textContent = `La letra ${letra} no es válida.`;*/
+      p.textContent = `La letra ${letra} no es válida.`;
       mensajeErroneo.appendChild(p);
     }
     
