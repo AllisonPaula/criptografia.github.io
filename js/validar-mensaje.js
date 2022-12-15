@@ -6,7 +6,7 @@ function validarMensaje() {
   }
 
   var mensaje = inputMensaje.value;
-  let letrasValidas ="abcdefghijklmnñopqrstuvwxyz- ";
+  let letrasValidas ="abcdefghijklmnñopqrstuvwxyz-0123456789 ";
   let mensajeErroneo = document.createDocumentFragment();
   for (let letra of mensaje){
     if(!letrasValidas.includes(letra)) {
